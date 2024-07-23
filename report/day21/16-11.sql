@@ -1,0 +1,12 @@
+--16-11
+
+DECLARE
+    V_NUMBER NUMBER DEFAULT 13;
+BEGIN
+    IF MOD(V_NUMBER, 2) = 1 THEN
+        DBMS_OUTPUT.PUT_LINE('홀수 입니다');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('짝수 입니다');
+    END IF;
+END;
+/
