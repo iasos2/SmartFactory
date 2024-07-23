@@ -1,0 +1,17 @@
+--Q)부서 테이블 만들어서 PL/SQL로 출력해보세요. DEPNO 10, DNAME 홍길동, LOC 안동
+--변수 선언은 DECLARE에서 하세요.
+--변수값 초기화는 BEGIN에서 하세요.
+
+DECLARE
+ V_DEPTNO NUMBER(2);
+ V_DNAME VARCHAR2(20);
+ V_LOC VARCHAR2(20);
+ BEGIN
+ V_DEPTNO := 10;
+ V_DNAME := '홍길동';
+ V_LOC := '안동';
+DBMS_OUTPUT.PUT_LINE(V_DEPTNO);
+DBMS_OUTPUT.PUT_LINE(V_DNAME);
+DBMS_OUTPUT.PUT_LINE(V_LOC);
+ END;
+ /
