@@ -1,0 +1,8 @@
+--변수에 NOT NULL을 설정하고 값을 대입한 후 출력
+
+DECLARE
+    V_DEPTNO NUMBER(2) NOT NULL := 20;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE(V_DEPTNO);
+END;
+/
